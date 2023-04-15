@@ -1,0 +1,143 @@
+
+.conditions_if_else_and_switch_title {
+    width: 100%;
+}
+
+.if_else_titulo h2{
+    margin: 3%;
+    color: rgb(17, 17, 17);
+    background-color: yellow;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.conditions_if_else_and_switch_title h2{
+    margin: 3%;
+    color: rgb(17, 17, 17);
+    background-color: yellow;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+
+#loop_animations {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.animation {
+    background-color: rgb(12, 12, 12);
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 200px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#animated_square_identifier_with_shadow {
+    width: 50%;
+    height: 50%;
+    min-height: 100px;
+    border: solid yellow 1px;
+    box-shadow: yellow 0px 0px 0px;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+#animated_square_identifier_with_border_radius {
+    width: 50%;
+    height: 50%;
+    min-height: 100px;
+    border: solid yellow 1px;
+    box-shadow: yellow 0px 0px 0px;
+    transition: 2s;
+    border-top-right-radius: 25% ;
+    border-bottom-left-radius: 25% ;
+}
+
+#eye_identifier {
+    width: 30px;
+    height: 10px;
+    border: solid yellow 1px;
+    border-radius: 100% 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.pupil {
+    width: 25%;
+    height: 50%;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.eye_triangle {
+     width: 100%;
+     height: 100%;
+     display:flex ;
+     align-items: center;
+     justify-content: center;
+     background-image: url("../img/triangle.png");
+     background-position: 50% 50%;
+     background-size: 100%;
+}
+
+.age_test_result {
+    display: flex;
+    width: 60%;
+    min-width: 200px;
+    justify-content: space-around;
+}
+
+#age_test {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 12, 12);
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 0;
+    min-width: 200px;
+}
+
+#age_test_input_indentifier {
+    width: 50%;
+    max-width: 100px;
+}
+
+#age_test button {
+    width: 100px;
+}
+
+.age_test_verifier {
+    background-color: rgb(12, 12, 12);
+    border: 1px solid yellow;
+    color: white;
+}
+
+#age_test_input_indentifier {
+    background-color: rgb(12, 12, 12);
+    border: yellow 1px solid;
+    transition: 1s; color: white;
+}
+
+#age_test_input_indentifier:focus-visible {
+    box-shadow: yellow 0 0 10px;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,348 @@
+
+.carousel_title {
+    position: relative;
+    height: 0;
+}
+
+.carousel_style {
+    overflow-x: hidden;
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    background-color: rgb(12, 12, 12);
+}
+
+#slide_position_identification {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+}
+
+.slide_position_identifier {
+    width: 10px;
+    background-color: rgb(9, 9, 9);
+    height: 10px;
+    border-radius: 50%;
+    margin: 0px 10px ;
+    transition: 0.3s;
+}
+
+.carousel_controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel_controls_position {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.carousel_slide_changer {
+    width: 80px;
+    margin-left: 3%;
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+.button_carousel {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+/*CAROUSEL 1 --------------------------------------------------*/
+
+.carousel_img {
+    min-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: black  0px 0px 20px;;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel_img img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel_img div h1 {
+    margin: 0;
+    background-color: rgb(10, 10, 10);
+    width: 50%;
+    text-align: center;
+    border-bottom-right-radius: 10px ;
+    font-size: 100%;
+    font-weight: 100;
+    color: white;
+}
+
+/*CAROUSEL 1 --------------------------------------------------*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/*CAROUSEL 2 --------------------------------------------------*/
+
+.carousel_img_2 {
+    min-width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: black  0px 0px 20px;;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel_img_2 img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel_img_2 div h1 {
+    margin: 0;
+    background-color: rgb(10, 10, 10);
+    width: 50%;
+    text-align: center;
+    border-bottom-right-radius: 10px ;
+    font-size: 100%;
+    font-weight: 100;
+    color: white;
+}
+
+/*CAROUSEL 2 --------------------------------------------------*/
+/**/
+/**/
+/**/
+/**/
+/*CAROUSEL MOBILE------------------------------------------------*/
+
+@media(max-width:700px) {
+    .carousel_img {
+        min-width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        box-shadow: black  0px 0px 20px;;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/*CAROUSEL MOBILE------------------------------------------------*/
+
+.page_purpose {
+    margin-top: 40px;
+    padding: 5px 5px 0px 0px;
+    background-color: rgb(10, 10, 10);
+    transition: 0.6s;
+    
+}
+
+
+.page_purpose_background_img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    margin-top: 1px;
+}
+
+.page_purpose h2 {
+    position: absolute;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+    padding: 1.5% 3%;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_purpose_eye_img {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+#page_purpose_text_paragraph {
+    width: 90%;
+    margin: 0;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+#page_purpose_text_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.6;
+    height: 0px;
+    transition: 0.6S;
+}
+
+#page_purpose_close_text {
+    display: none;
+    align-items: flex-start;
+    margin: 0;
+    opacity: 0;
+    transition: 0.6s;
+    color: black;
+}
+
+#page_purpose_close_text p{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.unlock_animation {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(10, 10, 10);
+    transition: 0.6s;
+}
+
+#download_link {
+    opacity:0;
+    transition: 0.6;
+    display: flex;
+}
+
+.down_arrow {
+    clip-path: polygon(19% 64%, 35% 63%, 36% 20%, 48% 20%, 48% 62%, 65% 64%, 41% 86%);
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.padlock_beam_left_and_right {
+    width: 15px;
+    height: 40px;
+    background-color: yellow;
+    transition: 0.6s;
+}
+.padlock_beam_group {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.padlock_beam_up {
+    width: 80px;
+    height: 15px;
+    background-color: yellow;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.download_page {
+    width: 100%;
+    margin: 60px 0px ;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(10, 10, 10);
+    height: 300px;
+    align-items: center;
+}
+
+.padlock_body_footer {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.padlock_body_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#download_link a {
+ color: yellow;
+ text-decoration: none;
+}
+
+.projects {
+    margin: 3%;
+}
+
+.project_container_texts h3{
+    font-weight: lighter;
+    color: yellow;
+
+}
+
+.project_container_texts p{
+    color: white;
+}
+
+.project_container_texts {
+    height: 90%;
+    width: 90%;
+}
+
+.projects_title h2 {
+    color: white;
+}
+
+.load_projects {
+    background-color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
+    font-family: 'Dosis', sans-serif;
+    font-weight: 10px;
+    height: 30px;
+    box-shadow: black 0px 0px 10px;
+}
+
+.project_container {
+    display: none;
+    width: 50%;
+    min-height: 400px;
+    background-color: rgb(9, 9, 9);
+    margin-bottom: 30px;
+    color: yellow;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.yellow_background {
+    width: 47%;
+    background-color: yellow;
+    height: 10%;
+    position: absolute;
+}
+
+@media(max-width:1260px) {
+    .project_container {
+        min-height: 200px;
+    }
+}
+   
+@media(max-width:700px) {
+    .project_container {
+        width:60%;
+        min-height: 100px;
+    }
+}

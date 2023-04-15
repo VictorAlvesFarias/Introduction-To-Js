@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="./repeaters.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../img/icone_java_script.png" type="image/x-icon">
+</head>
+<body style="transition: 1s;">
+    <header>
+        <div class="header_struct_class" id="header_identfier" style="transition: 0.3s;" >
+            <a href="../../index.html" style="transition: 1.2s;" class="title" onmouseenter="open_title_animation();" onmouseout="close_title_animation();" id="title_identifier">Js</a>                
+            <div class="header_container">
+                <div class="info_site"  >
+                    <p class="info_site_hovering" onmouseenter="open_info_site();" onmouseout="close_info_site();" >?</p>
+                    <div id="info_site_paragraph_container_identifier" class="info_site_paragraph_container">
+                        <div class="decorations"  style="transition: 4s;" id="decorations_identifier">
+                            <div class="triangle" ></div>
+                            <p>Esse se trata apenas de um site para aprendizagem de scripts</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="responsive_navbar_button" id="navbar_identifier" onclick="responsive_navbar()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+        </div>
+        <nav id="responsive_navbar_identifier" class="responsive_navbar_closed" style="transition: 0.4s;">   
+            <a href="../../pages/basic_js/basic_js.html">Basic Js</a>
+            <a href="../../pages/conditions/conditions.html">Conditions</a>
+            <a href="../../pages/get_time/get_time.html">Get Time</a>
+            <a href="../../pages/repeaters/repeaters.html">Repeaters</a>
+            <a href="../../pages/object_manipulation/object_manipulation.html">Object Manipulation</a>
+        </nav>
+        <nav class="navbar">   
+            <div id="link_navbar_0" class="link_navbar">
+                <a href="../../pages/basic_js/basic_js.html" >Basic js</a>    
+                <div id="navbar_menu_0" class="navbar_menu">
+                    <a href="../../pages/basic_js/basic_js.html" >Botões de Interação</a>
+                    <a href="../../pages/basic_js/basic_js.html" >Calculadora</a>                     
+                </div>        
+            </div>
+            <div id="link_navbar_1" class="link_navbar">
+                <a href="../../pages/conditions/conditions.html">Conditions</a>   
+                <div id="navbar_menu_1" class="navbar_menu" >
+                    <a href="../../pages/conditions/conditions.html#loop_animations">Animação Variável de Estado</a>
+                    <a href="../../pages/conditions/conditions.html#age_test">Verificação de Idade para Votar</a>
+                </div>
+            </div>
+            <div id="link_navbar_2" class="link_navbar">
+                <a href="../../pages/get_time/get_time.html" >Get Time</a>     
+                <div id="navbar_menu_2" class="navbar_menu">
+                    <a href="../../pages/get_time/get_time.html#switch_and_get_time">Conteúdo Bloqueado Com Switch</a>      
+                    <a href="../../pages/get_time/get_time.html#clock">Relógio</a>            
+                </div>
+            </div>
+            <div  id="link_navbar_3" class="link_navbar"  >
+                <a href="../../pages/repeaters/repeaters.html">Repeaters</a>
+                <div id="navbar_menu_3"  class="navbar_menu">
+                    <a href="../../pages/repeaters/repeaters.html#monster_of_the_window">Animação com "For"</a>  
+                    <a href="../../pages/repeaters/repeaters.html#while_repeater">Repetição controlada</a>
+                </div>
+            </div>
+            <div  id="link_navbar_4" class="link_navbar">
+                <a href="../../pages/object_manipulation/object_manipulation.html" >Object Manipulation</a>
+                <div id="navbar_menu_4" class="navbar_menu" >
+                    <a href="../../pages/object_manipulation/object_manipulation.html#objects__identifier">Efeito de Maquina de Escrever</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="while_and_for">
+        <div class="while_and_for_title">
+            <h2>While and For</h2>
+        </div>
+        <div class="yellow_border"   > 
+            <div id="while_repeater">
+                <div class="while_repeater_setup">
+                    <div class="generetor_settings">
+                        <input placeholder="Your Text" id="while_repeater_string_identifier" type="text">
+                        <input placeholder="Quantity" id="while_repeater_value_identifier" type="text">
+                    </div>
+                    <div class="generetor_settings">
+                        <button onclick="repeater()" id="while_repeater_submit_identifier">Press
+                        </button>
+                    </div>
+                    <div id="while_repeater_loading_identifier">
+                    </div>     
+                </div>
+                <div class="result_generator" >
+                    <p id="result_generator_paragraph_identifier">
+                    </p>
+                </div>
+            </div>     
+        </div>
+        <div class="yellow_border">
+            <div id="monster_of_the_window">
+                <div class="window">
+                    <div class="window_flap">
+                    </div>
+                    <div id="monster">
+                        <div class="monster_head">
+                            <div class="monster_head_horns_pair">
+                                <div class="monster_head_horn"></div>
+                                <div class="monster_head_horn"></div>
+                            </div>
+                            <div class="monster_head_eyes_pair">
+                                <div class="monster_head_eyes"></div>
+                                <div class="monster_head_eyes"></div>
+                            </div>
+                        </div>
+                        <div class="monster_body">
+                            <div class="monster_body_left">
+                                <div class="monster_body_left_shoulder"></div>
+                                <div class="monster_body_left_arm"></div>
+                            </div>
+                            <div class="monster_body_center">
+                                <div class="monster_body_center_justify">
+                                    <div class="monster_body_center_justify_neck"></div>
+                                </div>
+                                <div class="tronco_cima"></div>
+                                <div class="monster_body_center_justify">
+                                    <div class="monster_body_center_justify_stomach"></div>
+                                </div>
+                            </div>
+                            <div class="monster_body_right">
+                                <div class="monster_body_right_shoulder"></div>
+                                <div class="monster_body_right_arm"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="window_flap" >
+                    </div>
+                </div>
+                <img class="eye_of_the_window" src="../../img/eye.png" alt="" onclick="see_the_animation()"> 
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>
+            Created by Victor.
+        </h2>  
+        <p>Thanks for scrolling to here. </p>   
+        <a href="https://github.com/VictorAlvesFarias"><img src="../../img/github_simbolo.png" alt=""></a>
+    </footer>
+    <script src="./repeaters.js"></script>
+    <script src="../../index.js"></script>
+</body>
+</html>

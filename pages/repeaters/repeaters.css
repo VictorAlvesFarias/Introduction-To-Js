@@ -1,0 +1,289 @@
+.while_and_for_title {
+    width: 100%;
+}
+
+.while_repeater_setup {
+    width: 100%;
+
+}
+
+.while_and_for_title h2{
+    margin: 3%;
+    color: rgb(17, 17, 17);
+    background-color: yellow;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.result_generator {
+    background-color: rgb(12, 12, 12);
+}
+
+#while_repeater_submit_identifier {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(12, 12, 12);
+    transition: 0.4s;
+    color: white;
+
+}
+
+#while_repeater_submit_identifier:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#while_repeater_submit_identifier:active {
+    background-color: black;
+    border: 1px yellow solid;
+    color:white;
+}
+
+#while_repeater {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(14, 14, 14);
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+.generetor_settings {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+
+#while_repeater_value_identifier {
+    width: 30%;
+    transition: 0.3s;
+    background-color: rgb(12, 12, 12);
+    border: none;
+    color: white;
+    text-align: center;
+}
+#while_repeater_value_identifier:focus-visible {
+    outline: none;
+    border: none;
+}
+
+#while_repeater_string_identifier:focus-visible {
+    outline: none;
+    border: none;
+}
+
+#while_repeater_string_identifier {
+    width: 60%;
+    transition: 0.3s;
+    background-color: rgb(12, 12, 12);
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+.while_repeater_setup {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 200px;
+    margin-top: 30px;
+}
+
+
+.result_generator {
+    display: flex;
+    flex-wrap: wrap;
+   overflow-y: auto;
+    width: 50%;
+    height: 300px;
+    word-break: break-all;
+    min-width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.result_generator::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.result_generator::-webkit-scrollbar-track {
+    background:rgb(10, 10, 10);
+}
+  
+.result_generator::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 20px;
+    border: 3px solid rgb(10, 10, 10); 
+}
+
+#while_repeater_loading_identifier {
+    width:0%;
+    margin-top: 60px;
+    background-color: yellow;
+    height: 30px;
+    transition: 1s;
+}
+
+.eye_of_the_window {
+    width: 50px;
+}
+
+#monster {
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+#monster_of_the_window {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.window {
+    width: 200px;
+    height: 150px;
+    border: solid yellow 1px;
+    display: flex;
+    transition: 1s;
+    justify-content: space-between;
+    background-color: rgb(10, 10, 10);
+    align-items: center;
+}
+.window_flap {
+    width: 100px;
+    height: 150px;
+    border: solid yellow 1px;
+    transition: 1s;
+    background-color: rgb(14, 14, 14);
+
+}
+
+.monster_body_left_shoulder {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-top-left-radius: 100% ;
+}
+
+.monster_body_left_arm {
+    width: 7px;
+    height: 40px;
+    background-color: black;
+}
+
+.monster_body_right_shoulder {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-top-right-radius: 100% ;
+}
+
+.monster_body_right_arm {
+    width: 7px;
+    height: 40px;
+    background-color: black;
+}
+
+.monster_body_right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.monster_body_left {
+    margin-top: 5px;
+}
+
+.monster_body_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.monster_head_horns_pair {
+    display: flex;
+    justify-content: space-around;
+    width: 40px;
+}
+
+.monster_head_horn {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid black;
+    width: 0;
+    height: 0;
+}
+
+.monster_body {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+
+.monster_body_center_justify{
+    display: flex;
+    justify-content: center;
+}
+
+.monster_body_center_justify_neck {
+    width: 7px;
+    height: 5px;
+    background-color: black;
+}
+
+.tronco_cima{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.monster_body_center_justify_stomach{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+
+}
+
+.monster_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.monster_head_eyes_pair {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30% ;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50% ;
+}
+
+.monster_head_eyes{
+    width: 10px;
+    background-color: red;
+    height: 10px;
+    border-radius: 50%;
+    transition: 0.6s;
+}

@@ -1,0 +1,155 @@
+
+.get_time_title {
+    width: 100%;
+}
+
+.get_time_title h2{
+    margin: 3%;
+    color: rgb(17, 17, 17);
+    background-color: yellow;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.clock_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    height: 100px;
+
+}
+
+.clock_title h1 {
+    font-size: 15pt;
+
+}
+
+.clock_value {
+    background-color: yellow;
+    width: 25%;
+    height: 200px;
+    border: solid black 1px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25pt;
+}
+
+#clock {
+    width: 100%;
+}
+
+.clock_values {
+    width: 100%;
+    display: flex;
+}
+
+.switch_and_get_time_setup {
+    width: 50%;
+    min-width: 200px;
+    min-height: 500px;
+    background-color: rgb(12, 12, 12);
+    margin: 1.5% 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5;
+}
+
+#switch_and_get_time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+
+}
+
+#switch_and_get_time_content_identifier{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+#unlock_content_identifier {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+    height: 0px;
+}
+
+#unlock_content_identifier img {
+    width: 30%;
+}
+
+#unlock_content_identifier p {
+    width: 50%;
+}
+
+.padlock_bottom {
+    width: 100px ;
+    height: 100px;
+    background-color: yellow;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+#status_day_identifier {
+    transition: 0.5;
+}
+
+.padlock_up {
+    background-color: rgb(12, 12, 12);
+    border-top: 10px solid yellow; 
+    border-left: 10px solid yellow; 
+    border-right: 10px solid yellow; 
+    width: 60px;
+    height:55px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.switch_and_get_time_info {
+    width: 50%;
+}
+
+#img_code_identifier {
+    display: none;
+}
+
+#continue_menssage_identifier {
+    visibility: hidden;
+    transition: 1s;
+}
+
+.switch_and_get_time_verify_identifier {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(151, 151, 150);
+}
+
+
+.switch_and_get_time_verify_identifier:hover {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: yellow;
+    text-shadow: yellow 0 0 10px;
+}

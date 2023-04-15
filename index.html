@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./pages/index/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icone_java_script.png" type="image/x-icon">
+</head>
+<body style="transition: 1s;">
+    <header>
+        <div class="header_struct_class" id="header_identfier" style="transition: 0.3s;" >
+            <div class="title_container">
+                <a href="./index.html" style="transition: 1.2s;" class="title" onmouseenter="open_title_animation();" onmouseout="close_title_animation();" id="title_identifier">Js</a>      
+                <p>Rework</p>                   
+            </div>
+            <div class="header_container">
+                <div class="info_site"  >
+                    <p class="info_site_hovering" onmouseenter="open_info_site();" onmouseout="close_info_site();" >?</p>
+                    <div id="info_site_paragraph_container_identifier" class="info_site_paragraph_container">
+                        <div class="decorations"  style="transition: 4s;" id="decorations_identifier">
+                            <div class="triangle" ></div>
+                            <p>Esse se trata apenas de um site para aprendizagem de scripts</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="responsive_navbar_button" id="navbar_identifier" onclick="responsive_navbar()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+        </div>
+        <nav id="responsive_navbar_identifier" class="responsive_navbar_closed" style="transition: 0.4s;">   
+            <a href="./pages/basic_js/basic_js.html">Basic Js</a>
+            <a href="./pages/conditions/conditions.html">Conditions</a>
+            <a href="./pages/get_time/get_time.html">Get Time</a>
+            <a href="./pages/repeaters/repeaters.html">Repeaters</a>
+            <a href="./pages/object_manipulation/object_manipulation.html">Object Manipulation</a>
+        </nav>
+        <nav class="navbar">   
+            <div id="link_navbar_0" class="link_navbar">
+                <a href="./pages/basic_js/basic_js.html" >Basic js</a>    
+                <div id="navbar_menu_0" class="navbar_menu">
+                    <a href="./pages/basic_js/basic_js.html" >Botões de Interação</a>
+                    <a href="./pages/basic_js/basic_js.html" >Calculadora</a>                     
+                </div>        
+            </div>
+            <div id="link_navbar_1" class="link_navbar">
+                <a href="./pages/conditions/conditions.html">Conditions</a>   
+                <div id="navbar_menu_1" class="navbar_menu" >
+                    <a href="./pages/conditions/conditions.html#loop_animations">Animação Variável de Estado</a>
+                    <a href="./pages/conditions/conditions.html#age_test">Verificação de Idade para Votar</a>
+                </div>
+            </div>
+            <div id="link_navbar_2" class="link_navbar">
+                <a href="./pages/get_time/get_time.html" >Get Time</a>     
+                <div id="navbar_menu_2" class="navbar_menu">
+                    <a href="./pages/get_time/get_time.html#switch_and_get_time">Conteúdo Bloqueado Com Switch</a>      
+                    <a href="./pages/get_time/get_time.html#clock">Relógio</a>            
+                </div>
+            </div>
+            <div  id="link_navbar_3" class="link_navbar"  >
+                <a href="./pages/repeaters/repeaters.html">Repeaters</a>
+                <div id="navbar_menu_3"  class="navbar_menu">
+                    <a href="./pages/repeaters/repeaters.html#monster_of_the_window">Animação com "For"</a>  
+                    <a href="./pages/repeaters/repeaters.html#while_repeater">Repetição controlada</a>
+                </div>
+            </div>
+            <div  id="link_navbar_4" class="link_navbar">
+                <a href="./pages/object_manipulation/object_manipulation.html" >Object Manipulation</a>
+                <div id="navbar_menu_4" class="navbar_menu" >
+                    <a href="./pages/object_manipulation/object_manipulation.html#objects__identifier">Efeito de Maquina de Escrever</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carousel ">             
+            <div id="carousel_container" class="carousel_style">
+                <div class="carousel_img">
+                    <div class="carousel_title">
+                        <h1>Sintaxe</h1>
+                    </div>
+                    <a href="./pages/basic_js/basic_js.html"><img class="imagem_carousel" class="imagem_carousel"src="img/imagem_s_1.png" alt=""></a>
+                </div>
+                <div class="carousel_img">
+                    <div class="carousel_title">
+                        <h1>Condições</h1>
+                    </div>
+                    <a href="./pages/conditions/conditions.html"><img class="imagem_carousel" class="imagem_carousel"src="img/imagem_s_2.png" alt=""></a>
+                </div>
+                <div class="carousel_img">
+                    <div class="carousel_title">
+                        <h1>Repetições</h1>
+                    </div>
+                    <a href="./pages/repeaters/repeaters.html"><img class="imagem_carousel" class="imagem_carousel"src="img/imagem_s_3.png" alt=""></a>
+                </div>
+                <div class="carousel_img">
+                    <div class="carousel_title">
+                        <h1>Manipulação Objeto</h1>
+                    </div>
+                    <a href="./pages/object_manipulation/object_manipulation.html"><img class="imagem_carousel" class="imagem_carousel"src="img/imagem_s_4.png" alt=""></a>
+                </div>
+                <div class="carousel_img">
+                    <div class="carousel_title">
+                        <h1>Usando a Data e Hora do Usuário</h1>
+                    </div>
+                    <a href="./pages/get_time/get_time.html"><img class="imagem_carousel" class="imagem_carousel"src="img/imagem_s_5.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div  id="slide_position_identification">
+        </div>        
+        <div class="carousel_controls">
+            <div class="carousel_controls_position">
+                <button class = "button_carousel" onclick="return_slide()"> < </button>
+                <button class = "button_carousel" onclick="next_slide()"> > </button>
+            </div>
+            <button class="carousel_slide_changer" onclick="slide_changer()">Mudar Slider</button>            
+        </div>
+    </main>
+    <section class="page_purpose">
+        <div>
+            <h2>Sobre o que se trata esse site? <img class="page_purpose_eye_img" onclick="open_purpose_text()" src="img/eye.png" alt=""></h2>
+            <img class="page_purpose_background_img" src="img/javascript_text_image.jpg" alt="">
+        </div>
+        <div id="page_purpose_text_container">
+            <div id="page_purpose_close_text">            
+                <p  onclick="close_purpose_text()">X</p> 
+            </div>
+            <p id="page_purpose_text_paragraph">
+                &ensp; Olá, seja bem-vindo a minha primeira reformulação do meu primeiro projeto em Java Script, saiba que esse projeto pode ter muitos problemas técnicos e de arquitetura, além de problemas na escrita do código, esse site tem como objetivo ser um material de estudo. 
+                <br>
+                &ensp;Obrigado por estar vendo-o e caso queira ver meu código, estará disponível em download, caso queira dar sugestões ou ideias mande no meu e-mail. Obrigado pela consideração e atenção.
+            </p>
+        </div>
+    </section>
+    <section class="download_page">
+        <div id="unlock_animation" class="unlock_animation">
+            <div id="padlock_body">
+                <div class="padlock_body_header">
+                    <div class="padlock_beam_up"></div>
+                    <div class="padlock_beam_group">
+                        <div id="padlock_beam_right_animation" class="padlock_beam_left_and_right"></div>
+                        <div class="padlock_beam_left_and_right"></div>
+                    </div>
+                </div>
+                <div class="padlock_body_footer">
+                </div>
+            </div>
+        </div>
+        <div id="download_link"> 
+            <a download="" href="#">Dowload</a>
+            <div class="down_arrow"></div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="projects_title">
+            <h2>Todos os meus projetos</h2>
+            <p>Aqui você pode encontrar todos meus projetos baseados na sintaxe básica de Java Script.</p>
+        </div>
+        <a href="./pages/get_time/get_time.html#clock">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Cronômetro</h3>
+                    <p>O Cronômetro foi feito usando as a função interna do Java Script  chamada "Get Time", sua principal função e capturar o as informações de data do usuário, e com essa informação podemos construir varias lógicas, sendo uma delas um Relógio.</p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/get_time/get_time.html#switch_and_get_time">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Unlock Content</h3>
+                    <p>Também usando o "Get Time", porem agora em conjunto com uma outra função, o Switch. Essa funcionalidade do Java Script traz a possibilidade de diversos escolhas de retorno para uma função de acordo com o variável ou valor setado de parâmetro. </p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/basic_js/basic_js.html">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Botões de Interação</h3>
+                    <p>Falando sobre o básico de Java Script, os botões os quais estamos falando são alguns construídos com o objetivo apresentar algumas interações bem básicas que a linguagem apresenta, como a alterações de classes, uso do console do navegar, Etc. </p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/basic_js/basic_js.html">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Calculadora</h3>
+                    <p>A Calculadora consiste numa função de inserção de strings no HTML que é a parte visual, e a inserção em um segundo input que é o que ira ser executado pela função <code>Eval()</code>.</p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/conditions/conditions.html#age_test">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Verificação de Idade para Votar</h3>
+                    <p>Um pequeno exemplo de qual é o uso do If e Else, no caso ele é a função que guia qual ação deve ser seguida de acordo com certa condição, bem simples porem intuitivo.</p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/conditions/conditions.html#loop_animations">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Animação Variável de Estado</h3>
+                    <p>Também com If e Else, essas animações utilização dessas funções para definir qual parte da própria animação ele deve seguir no próximo loop, de acordo com com o estado que ela se encontra.</p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/object_manipulation/object_manipulation.html#objects__identifier">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Efeito de Maquina de Escrever</h3>
+                    <p>
+                        Os objetos em Java Script são o que trazem os fluxos dos grandes projetos, essa pequena animação que faz um efeito de maquina de escrever, e graças  a utilização de um objeto o código fica bem mais simples e organizado.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/repeaters/repeaters.html#while_repeater">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Repetição Controlada</h3>
+                    <p>O Repetidor utiliza-se das Funções While e For para criar um sistema de repetição de caracteres, onde sua função é inserir algum tipo de texto no HTML pré selecionado, você pode definir a quantidade de vezes que ele deve repetir e o texto que você escolher.</p>
+                </div>
+            </div>
+        </a>
+        <a href="./pages/repeaters/repeaters.html#monster_of_the_window">
+            <div class="project_container">
+                <div class="project_container_texts">
+                    <h3>Monster in The Window</h3>
+                    <p>Esse projeto se trata de uma animação com Css e Java Script, onde o Java Script utiliza-se do For para fazer a mudança simultânea de diversas classes no HTML, para que haja uma alteração visual, gerando uma animação.</p>
+                </div>
+            </div>
+        </a>
+        <div>
+            <button class="load_projects" onclick="loading_projects()">Veja mais</button>
+        </div>
+    </section>
+    <footer>
+        <h2>
+            Created by Victor.
+        </h2>  
+        <p>Thanks for scrolling to here. </p>   
+        <a href="https://github.com/VictorAlvesFarias"><img src="img/github_simbolo.png" alt=""></a>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./pages/index/index.js"></script>
+</body>
+</html>
+
