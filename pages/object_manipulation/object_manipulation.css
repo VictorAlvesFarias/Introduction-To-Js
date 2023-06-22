@@ -16,8 +16,9 @@
 }
 
 
-#objects__identifier {
-    width: 99%;
+#objects_identifier {
+    width: 90%;
+    max-width: 1980px;
 }
 
 .objects_title h2{
@@ -67,7 +68,7 @@
 }
 
 @media(max-width:1260px) {
-    #objects__identifier {
+    #objects_identifier {
         width: 60%;
         min-width: 245px;
     }

@@ -2,11 +2,10 @@
 //VAR DECLARATIONS------------------------------------------------------
 let carousel_container = document.getElementById("carousel_container")
 
-let carousel_childrens = carousel_container.children.length
+let carousel_childrens = Math.ceil(carousel_container.children.length)
 
-let carousel_container_width = carousel_container.clientWidth
-
-let carousel_scroll_width = carousel_container.scrollWidth
+let carousel_container_width = Math.ceil(carousel_container.clientWidth)
+let carousel_container_scrool = Math.ceil(carousel_container.scrollLeft)
 
 
 let slider_style = 1
@@ -42,12 +41,17 @@ let initial_projects = 0
 //
 //slide_position_identification.removeChild(slide_position_identification.lastChild)
 //PRESET SLIDER --------------------------------------------------------
+
 carousel_container.appendChild(carousel_container.children[0].cloneNode(true))
 carousel_container.appendChild(carousel_container.children[1].cloneNode(true))
 for (let i = 0; i < carousel_container.children.length-2; i++) {
     slide_position_identification.innerHTML += `<div class="slide_position_identifier"></div>`
 }
-carousel_container.scrollLeft = carousel_container_width
+scrool_value=carousel_container_width
+carousel_container.scrollTo({
+    left: scrool_value
+});
+
 //PRESET SLIDER --------------------------------------------------------
 //
 //
@@ -56,10 +60,15 @@ carousel_container.scrollLeft = carousel_container_width
 //
 //CAROULSEL ------------------------------------------------------------
 
+function update_containers_informations() {
+    carousel_container_width = carousel_container.clientWidth
+    carousel_scroll_width = carousel_container.scrollWidth
+    carousel_childrens = carousel_container.children.length
+}
+
+
 let slide_position_identifier = document.getElementsByClassName("slide_position_identifier")
 slide_position_identifier[slider_value].style.backgroundColor = "yellow"
-
-
 
 const update_slide_identification = {
     left() {
@@ -95,12 +104,6 @@ const update_slide_identification = {
         
     }
 }
- 
-function update_containers_informations() {
-    carousel_container_width = carousel_container.clientWidth
-    carousel_scroll_width = carousel_container.scrollWidth
-    carousel_childrens = carousel_container.children.length
-}
             
 function carousel_childrens_loop() {
     switch (slider_style) {
@@ -131,11 +134,13 @@ function slide_changer() {
     carousel_childrens_loop()    
     switch (slider_style) {
         case 1:
+            slider_style=2
             for (let i = 0; i < carousel_container.children.length;i++) {
                 carousel_container.children[i].className = "carousel_img_2"
             }              
             break;
         case 2:
+            slider_style=1
             for (let i = 0; i < carousel_container.children.length;i++) {
                 carousel_container.children[i].className = "carousel_img"
             }  
@@ -151,85 +156,119 @@ function set_slide_configs() {
     update_containers_informations()
     switch (slider_style) {
         case 1:
-            carousel_container.scrollLeft = Math.trunc(carousel_container_width/100*40) 
-            scrool_value = Math.trunc(carousel_container_width/100*40) 
-            slider_style = 2
+            scrool_value=carousel_container_width
+            carousel_container.scrollTo({
+                left: scrool_value
+            });
             break;
         case 2:
-            carousel_container.scrollLeft = carousel_container_width
-            scrool_value = carousel_container_width
-            slider_style = 1
+            scrool_value=Math.ceil(carousel_container_width/100*40)
+            carousel_container.scrollTo({
+                left: Math.ceil(carousel_container_width/100*40)
+            });
             break;
         default:
+            break;
     }
 }
 
-function next_slide() {
-    update_containers_informations()
+async function next_slide() {
     switch (slider_style) {
-        case 1:
-            if (scrool_value == carousel_container_width*6) {
-                carousel_container.scrollLeft = carousel_container_width
-                scrool_value = carousel_container_width
-            }
-            scrool_value += carousel_container_width
-            for (let i = 0; i < carousel_container_width; i++) {
-                setTimeout(() => {
-                    carousel_container.scrollLeft += 1                    
-                }, 0.5*i);
+        case 1: 
+            if (Math.ceil(carousel_container.scrollLeft)==scrool_value) {
+
+                if (scrool_value == carousel_container_width*5) {
+                    scrool_value=0
+
+                    carousel_container.scrollTo({
+                        left: scrool_value
+                    });
+                }
+
+                scrool_value+=carousel_container_width
+
+                carousel_container.scrollTo({
+                    left: scrool_value,
+                    behavior: 'smooth'
+                });
+
+                update_slide_identification.right()
             }
             break;
         case 2:
-            if(Math.trunc(carousel_container_width/100*60)*5+Math.trunc(carousel_container_width/100*40)==scrool_value) {
-                carousel_container.scrollLeft = Math.trunc(carousel_container_width/100*40) 
-                scrool_value = Math.trunc(carousel_container_width/100*40) 
+            if (Math.ceil(carousel_container.scrollLeft)==scrool_value) {
+
+                if (scrool_value == Math.ceil(carousel_container_width/100*60)*5+Math.ceil(carousel_container_width/100*40)) {
+                    scrool_value=Math.ceil(carousel_container_width/100*40)
+
+                    carousel_container.scrollTo({
+                        left: scrool_value
+                    });
+                }
+
+                scrool_value+=Math.ceil(carousel_container_width/100*60)
+
+                carousel_container.scrollTo({
+                    left: scrool_value,
+                    behavior: 'smooth'
+                });
+
+                update_slide_identification.right()
             }
-            scrool_value += Math.trunc(carousel_container_width/100*40)
-            for (let i = 0; i < Math.trunc(carousel_container_width/100*60); i++) {
-                setTimeout(() => {
-                    carousel_container.scrollLeft += 1                    
-                }, 0.5*i);
-            }
+
             break;
         default:
             break;
     }
 
-    update_slide_identification.right()
 }
 
 function return_slide() {
-    update_containers_informations()
     switch (slider_style) {
-        case 1:
-            if (scrool_value == 0) {
-                carousel_container.scrollLeft = carousel_container_width*6
-                scrool_value = carousel_container_width*6
-            }            
-            scrool_value -= carousel_container_width        
-            for (let i = 0; i < carousel_container_width; i++) {
-                setTimeout(() => {
-                    carousel_container.scrollLeft -= 1                    
-                }, 0.5*i);
+        case 1: 
+            if (Math.ceil(carousel_container.scrollLeft)==scrool_value) {
+                if (scrool_value == carousel_container_width) {
+                    scrool_value=carousel_container_width*6
+
+                    carousel_container.scrollTo({
+                        left: scrool_value
+                    });
+                }
+
+                scrool_value-=carousel_container_width
+
+                carousel_container.scrollTo({
+                    left: scrool_value,
+                    behavior: 'smooth'
+                });
+                update_slide_identification.left()
             }
             break;
         case 2:
-            if(scrool_value == Math.trunc(carousel_container_width/100*40) ) {
-                carousel_container.scrollLeft = Math.trunc(carousel_container_width/100*60)*5+Math.trunc(carousel_container_width/100*40) 
-                scrool_value = Math.trunc(carousel_container_width/100*60)*5+Math.trunc(carousel_container_width/100*40) 
-            }
-            scrool_value -= Math.trunc(carousel_container_width/100*60)            
-            for (let i = 0; i < Math.trunc(carousel_container_width/100*60); i++) {
-                setTimeout(() => {
-                    carousel_container.scrollLeft -= 1                    
-                }, 0.5*i);
+            if (Math.ceil(carousel_container.scrollLeft)==scrool_value) {
+
+                if (scrool_value == Math.ceil(carousel_container_width/100*40)) {
+                    scrool_value=Math.ceil(carousel_container_width/100*40)+ Math.ceil(carousel_container_width/100*60)*5
+
+                    carousel_container.scrollTo({
+                        left: scrool_value
+                    });
+                }
+
+                scrool_value-=Math.ceil(carousel_container_width/100*60)
+
+                carousel_container.scrollTo({
+                    left: scrool_value,
+                    behavior: 'smooth'
+                });
+
+                update_slide_identification.left()
             }
             break;
         default:
             break;
     }
 
-    update_slide_identification.left()
 }
 //CAROULSEL ----------------------------------------------------------
 //

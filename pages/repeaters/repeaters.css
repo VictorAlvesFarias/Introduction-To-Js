@@ -7,6 +7,11 @@
 
 }
 
+#while_and_for {
+    max-width: 1980px;
+    width: 90%;
+}
+
 .while_and_for_title h2{
     margin: 3%;
     color: rgb(17, 17, 17);

@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+#java_script_basic{
+    width: 90%;
+    max-width: 1980px;
+}
+
 .basic_js_title h2{
     margin: 3%;
     color: rgb(17, 17, 17);

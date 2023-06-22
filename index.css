@@ -61,6 +61,14 @@ body {
     background-color: rgb(17, 17, 17);
     color: yellow;
     font-family: 'Dosis', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.max-w {
+    max-width: 1980px;
+    width: 100%;
 }
 
 button {
